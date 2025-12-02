@@ -1,7 +1,7 @@
 📘 README – Projeto ECOAR
 
 
-![WhatsApp_Video_2025-12-02_at_01 38 26](https://github.com/user-attachments/assets/0d8a90b2-d36e-4d85-a168-53b993ada720)
+![2025-12-02_at_01 38 26](https://github.com/user-attachments/assets/0d8a90b2-d36e-4d85-a168-53b993ada720)
 
 
 Sistema de Acompanhamento de Alunos em Risco de Evasão
@@ -159,6 +159,7 @@ Exemplo de documento no MongoDB:
   
   "ultima_acao": "Contato realizado"
 }
+
 
 
 
