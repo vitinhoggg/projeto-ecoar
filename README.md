@@ -1,117 +1,136 @@
-# Projeto ECOAR — Plataforma de Apoio a Alunos em Risco de Evasão
+📘 README – Projeto ECOAR
+Sistema de Acompanhamento de Alunos em Risco de Evasão
+📌 Descrição do Projeto
 
-## 📘 Visão Geral
+O Projeto ECOAR tem como objetivo monitorar, acompanhar e intervir precocemente em casos de alunos com risco de evasão no ambiente acadêmico.
+O sistema foi desenvolvido para auxiliar instituições de ensino superior a detectar sinais de alerta, registrar informações importantes e facilitar o contato entre aluno e equipe de suporte.
 
-O **Projeto ECOAR** é uma plataforma desenvolvida para identificar, acompanhar e apoiar estudantes em risco de evasão acadêmica. Voltado para instituições de ensino superior, o sistema integra análise de dados, gestão de atendimentos e comunicação entre alunos, mentores e coordenação.
+O projeto utiliza:
 
-Seu objetivo principal é **reduzir a evasão**, oferecendo recursos que permitem ações preventivas, intervenções rápidas e monitoramento contínuo da jornada do aluno.
+MongoDB como banco de dados NoSQL
 
----
+Python/Flask (presumido pelo histórico do chat — posso ajustar caso seja outra tecnologia)
 
-## 🎯 Objetivos do Sistema
+Visual Studio Code como ambiente principal de desenvolvimento
 
-* Identificar alunos com indicadores de risco (frequência, notas, engajamento, dificuldades pessoais).
-* Facilitar o acompanhamento individual de cada estudante.
-* Gerar relatórios e insights para gestores educacionais.
-* Centralizar atendimentos e comunicações.
-* Criar um ambiente seguro e acolhedor para o aluno.
+Arquitetura simples, modular e fácil de escalar
 
----
+🎯 Objetivos do Sistema
 
-## 🧩 Estrutura do Projeto
+Identificar alunos com risco de evasão através de dados acadêmicos e comportamentais.
 
-O projeto é dividido em dois módulos principais:
+Registrar atendimentos, alertas e justificativas.
 
-### **1. Backend (Flask)**
+Facilitar o acompanhamento por parte de coordenadores e equipes pedagógicas.
 
-Localizado em `backend/`. Responsável por:
+Manter um histórico centralizado e acessível.
 
-* APIs REST
-* Processamento dos dados
-* Regras de negócios
-* Gestão dos registros dos alunos
-* Dashboard administrativo
+Apoiar decisões institucionais com informações confiáveis.
 
-Principais arquivos:
+🧩 Principais Funcionalidades
 
-* `app.py` — Inicialização da aplicação Flask.
-* `core/ecoar.py` — Lógica do núcleo do sistema.
-* `routes/api.py` — Endpoints de API.
-* `routes/dashboard.py` — Rotas do dashboard.
+📋 Cadastro de Alunos
 
-### **2. Interface Inicial / Servidor (run.py)**
+⚠️ Identificação de risco de evasão
 
-Localizado em `inicio/run.py`.
+📝 Registro de intervenções e atendimentos
 
-* Executa o servidor Flask.
-* Roda em modo de desenvolvimento.
-* Pode ser configurado para produção com Gunicorn/Nginx.
+📊 Consulta e geração de relatórios (se aplicável)
 
----
+🔍 Filtros por curso, período, status e nível de risco
 
-## 🚀 Como Executar o Projeto
+👨‍🏫 Área para equipe pedagógica (ajustável conforme o projeto)
 
-### **Requisitos**
+📦 Integração com MongoDB para armazenamento
 
-* Python 3.10+
-* Pip
-* Virtualenv (opcional, recomendado)
+🏗️ Tecnologias Utilizadas
+Back-end
 
-### **Passo a passo**
+Python
 
-```bash
-cd inicio
+Flask (se for outra tecnologia, me diga)
+
+MongoDB (banco principal)
+
+pymongo ou outro driver de conexão
+
+Front-end
+
+HTML, CSS, JS (ou especifique se usa framework ex: React/Vue)
+
+Ambiente de Desenvolvimento
+
+Visual Studio Code
+
+Extensões recomendadas:
+
+MongoDB for VS Code
+
+Python
+
+Live Server (se houver front-end estático)
+
+📂 Estrutura do Projeto (exemplo)
+
+(posso ajustar conforme o conteúdo real do seu .rar)
+
+/Project-ECOAR
+│── /inicio
+│   ├── run.py
+│   ├── /static
+│   ├── /templates
+│   ├── /routes
+│   ├── /services
+│   └── /models
+│
+│── README.md
+│── requirements.txt
+
+🔧 Instalação e Configuração
+1. Clonar o repositório
+git clone https://github.com/seu-usuario/projeto-ecoar.git
+cd projeto-ecoar
+
+2. Criar ambiente virtual
+python -m venv venv
+venv\Scripts\activate
+
+3. Instalar dependências
+pip install -r requirements.txt
+
+4. Configurar variáveis de ambiente
+
+Crie um arquivo .env:
+
+MONGO_URI=mongodb://localhost:27017
+DATABASE_NAME=ecoar_db
+
+5. Iniciar o servidor
 python run.py
-```
-
-O servidor iniciará em:
-
-```
-http://127.0.0.1:8000
-```
-
----
-
-## 🛠 Tecnologias Utilizadas
-
-* **Python + Flask** — Backend e API.
-* **HTML/CSS/JS** (se houver templates).
-* **MongoDB** (dependendo da configuração do ambiente).
-* Integrações futuras possíveis: dashboards externos, bots, IA.
-
----
-
-## 📂 Funcionalidades Principais
-
-### ✔ Cadastro e acompanhamento de alunos
-
-Armazena dados básicos e indicadores de risco.
-
-### ✔ Sistema de alertas
-
-Gera sinalizações automáticas quando um aluno se aproxima de padrões de risco.
-
-### ✔ Painel de controle para gestores
-
-Exibe métricas gerais e casos que exigem atenção.
-
-### ✔ Registro de atendimentos
-
-Possibilita anotações, retornos, agendamentos e acompanhamento de suporte.
-
-### ✔ Histórico completo do aluno
-
-Permite ao gestor acompanhar a evolução do aluno ao longo do semestre.
 
 
+Servidor rodará em:
+👉 http://127.0.0.1:8000
 
-## 📊 Possíveis Expansões Futuras
+🗄️ Configuração do Banco (MongoDB)
 
-* Integração com Moodle/SIGAA.
-* Análises com IA para prever evasão com maior precisão.
-* Módulo de atendimento psicológico.
-* App mobile.
-* Envio automático de mensagens aos alunos.
+O banco contém coleções típicas como:
 
+alunos
 
+riscos
 
+atendimentos
+
+usuarios (se houver sistema de login)
+
+Exemplo de documento no MongoDB:
+
+{
+  "nome": "João Silva",
+  "curso": "Engenharia",
+  "periodo": 3,
+  "risco_evasao": "alto",
+  "justificativa": "Faltas recorrentes",
+  "ultima_acao": "Contato realizado"
+}
