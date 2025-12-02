@@ -3,6 +3,7 @@ Sistema de Acompanhamento de Alunos em Risco de Evasão
 
 📌 Descrição do Projeto
 
+
 O Projeto ECOAR tem como objetivo monitorar, acompanhar e intervir precocemente em casos de alunos com risco de evasão no ambiente acadêmico.
 O sistema foi desenvolvido para auxiliar instituições de ensino superior a detectar sinais de alerta, registrar informações importantes e facilitar o contato entre aluno e equipe de suporte.
 
@@ -18,6 +19,7 @@ Arquitetura simples, modular e fácil de escalar
 
 🎯 Objetivos do Sistema
 
+
 Identificar alunos com risco de evasão através de dados acadêmicos e comportamentais.
 
 Registrar atendimentos, alertas e justificativas.
@@ -29,6 +31,7 @@ Manter um histórico centralizado e acessível.
 Apoiar decisões institucionais com informações confiáveis.
 
 🧩 Principais Funcionalidades
+
 
 📋 Cadastro de Alunos
 
@@ -45,6 +48,8 @@ Apoiar decisões institucionais com informações confiáveis.
 📦 Integração com MongoDB para armazenamento
 
 🏗️ Tecnologias Utilizadas
+
+
 Back-end
 
 Python
@@ -72,6 +77,8 @@ Python
 Live Server (se houver front-end estático)
 
 📂 Estrutura do Projeto (exemplo)
+
+
 
 /Project-ECOAR
 │── /inicio
@@ -120,6 +127,8 @@ Servidor rodará em:
 
 🗄️ Configuração do Banco (MongoDB)
 
+
+
 O banco contém coleções típicas como:
 
 alunos
@@ -145,6 +154,7 @@ Exemplo de documento no MongoDB:
   
   "ultima_acao": "Contato realizado"
 }
+
 
 
 
