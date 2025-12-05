@@ -65,6 +65,8 @@ MongoDB (banco principal)
 
 pymongo ou outro driver de conexão
 
+Pandas
+
 Front-end
 
 HTML, CSS, JS (ou especifique se usa framework ex: React/Vue)
@@ -78,6 +80,7 @@ Extensões recomendadas:
 MongoDB for VS Code
 
 Python
+
 
 Live Server (se houver front-end estático)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -159,6 +162,8 @@ Exemplo de documento no MongoDB:
   
   "ultima_acao": "Contato realizado"
 }
+
+
 
 
 
