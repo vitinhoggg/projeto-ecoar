@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report, accuracy_score
 import joblib
 
 load_dotenv()
-MONGO_URI = "mongodb+srv://vitinho:aluno123@ac-bmkbk7g.3znlu18.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = ""
 
 # Banco de Dados e Coleção:
 NOME_DO_BANCO = "ecoar"
