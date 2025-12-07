@@ -59,7 +59,7 @@ Back-end
 
 Python
 
-Flask 
+Flask (se for outra tecnologia, me diga)
 
 MongoDB (banco principal)
 
@@ -69,7 +69,7 @@ Pandas
 
 Front-end
 
-HTML, CSS, JS 
+HTML, CSS, JS (ou especifique se usa framework ex: React/Vue)
 
 Ambiente de Desenvolvimento
 
@@ -162,7 +162,6 @@ Exemplo de documento no MongoDB:
   
   "ultima_acao": "Contato realizado"
 }
-
 
 
 
