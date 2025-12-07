@@ -5,7 +5,7 @@ import random
 fake = Faker("pt_BR")  # nomes brasileiros
 
 # ===== CONEXÃO =====
-client = MongoClient("mongodb+srv://murilo:aluno123@ac-bmkbk7g.3znlu18.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("")
 db = client.ecoar
 
 # ===== CONFIGURAR QUANTOS NOVOS ALUNOS GERAR =====

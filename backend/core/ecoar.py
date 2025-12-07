@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Substitua com sua connection string
-client = MongoClient("mongodb+srv://murilo:aluno123@ecoar.3znlu18.mongodb.net/?appName=Ecoar")
+client = MongoClient()
 
 db = client.ecoar
 

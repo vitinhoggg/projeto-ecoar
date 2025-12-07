@@ -6,7 +6,7 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 
 load_dotenv()
-MONGO_URI = "mongodb+srv://murilo:aluno123@ecoar.3znlu18.mongodb.net/?appName=Ecoar"
+MONGO_URI = ""
 
 # Banco de Dados e Coleção:
 NOME_DO_BANCO = "ecoar"

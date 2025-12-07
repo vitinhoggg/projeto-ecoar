@@ -6,8 +6,7 @@ import pandas as pd
 # CONEXÃO COM O MONGODB
 # ==========================================
 client = MongoClient(
-    "mongodb+srv://murilo:aluno123@ac-bmkbk7g.3znlu18.mongodb.net/"
-    "?retryWrites=true&w=majority&appName=Cluster0"
+    
 )
 db = client.ecoar
 

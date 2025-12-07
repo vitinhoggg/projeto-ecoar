@@ -6,7 +6,7 @@ import os
 load_dotenv()
 MONGO_URI = os.getenv(
     "MONGO_URI",
-    "mongodb+srv://murilo:aluno123@ac-bmkbk7g.3znlu18.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    ""
 )
 
 NOME_DO_BANCO = "ecoar"
